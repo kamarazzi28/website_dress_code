@@ -1,0 +1,447 @@
+@media print {
+    header, button {
+        display: none;
+    }
+    body {
+        font-size: 12pt;
+        color: black;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    @page {
+        margin: 1cm;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FED6CA;
+    font-family: Verdana, sans-serif;
+    font-size: 100%;
+}
+header {
+    width: 100%;
+    top: 0;
+    /*background-color: darksalmon;*/
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0 0 0 90px;
+    padding: 0;
+    justify-content: left;
+    align-items: stretch;
+    height: 100%;
+}
+.navigation ul li {
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+}
+.navigation ul li:last-child {
+    margin-right: 0;
+}
+.navigation ul li a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block; /* Добавлено */
+    padding: 0; /* Добавлено */
+    flex-grow: 1; /* Добавлено для равномерного распределения ширины */
+    text-align: center; /* Добавлено для центрирования текста */
+    box-sizing: border-box; /* Добавлено */
+}
+
+.sign-in {
+    display: flex;
+    align-items: center;
+}
+.sign-in a {
+    color: black;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+.sign-in img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.current-page,
+.current-page:hover {
+    background-color: #BA8383;
+    color: #FFF;
+}
+.current-page {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.current-page::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    bottom: -38px;
+    left: -40px;
+    right: -40px;
+    background-color: #FBA9AB;
+    z-index: -1;
+}
+
+.navigation ul li a:hover,
+.sign-in a:hover {
+    color: #FFF;
+}
+.sign-in img:hover {
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+.image {
+    text-align: center; /* Центрируем содержимое по горизонтали */
+}
+.image img {
+    max-width: 50%;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: -20px;
+}
+.button-link {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    background-color: #FBA9AB;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    cursor: pointer;
+
+}
+.button-link:hover {
+    background-color: #BA8383;
+    color: white;
+}
+
+
+
+.nadpis_tr {
+    position: absolute;
+    font-size: 3em;
+    font-weight: bold;
+    top: 700px;
+    left: 100px;
+}
+.nadpis_intr {
+    position: absolute;
+    font-size: 3em;
+    font-weight: bold;
+    top: 1550px;
+    right: 100px;
+}
+.nadpis_apple {
+    position: absolute;
+    font-size: 3em;
+    font-weight: bold;
+    top: 2430px;
+    left: 130px;
+}
+.nadpis_rec {
+    position: absolute;
+    font-size: 3em;
+    font-weight: bold;
+    top: 3250px;
+    right: 80px;
+}
+.nadpis_hg {
+    position: absolute;
+    font-size: 3em;
+    font-weight: bold;
+    top: 4150px;
+    left: 80px;
+}
+
+
+.img_triangle {
+    position: absolute;
+    top: 650px;
+    right: 0;
+    width: 25%;
+}
+.img_intriangle {
+    position: absolute;
+    top: 1500px;
+    left: 30px;
+    width: 30%;
+}
+.apple {
+    position: absolute;
+    top: 2400px;
+    right: 0;
+    width: 25%;
+}
+.rectangle {
+    position: absolute;
+    top: 3200px;
+    left: 30px;
+    width: 30%;
+}
+.hourglass {
+    position: absolute;
+    top: 4200px;
+    right: 0;
+    width: 25%;
+}
+
+
+.img_triangle img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.img_intriangle img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+.apple img {
+    width: 85%;
+    height: auto;
+    display: block;
+    transform: scaleX(-1);
+}
+.rectangle img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+.hourglass img {
+    width: 90%;
+    height: auto;
+    display: block;
+    transform: scaleX(-1);
+}
+
+
+
+.des_box_left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+.des_box_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+.des_box_left p,
+.des_box_right p {
+    font-size: 18px;
+    color: black;
+    padding: 28px;
+    margin: 15px;
+    text-align: center;
+}
+
+
+.description_tr,
+.style_advice_tr {
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    height: 250px;
+    width: 350px;
+    margin-top: 220px; /* Отступ сверху для смещения блоков вниз */
+    margin-left: 70px; /* Отступ слева для первого блока */
+}
+.style_advice_tr {
+    margin-left: 40px; /* Дополнительный отступ слева для второго блока */
+}
+.clothing_tr {
+    display: flex;
+    justify-content: space-around;
+    background-color: #CD6064;
+    border-radius: 40px;
+    width: 740px;
+    margin-top: 510px; /* Измените отступ сверху для clothing */
+    margin-left: -740px; /* Измените отступ слева для clothing */
+    height: 320px;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+
+.description_intr,
+.style_advice_intr {
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    height: 250px;
+    width: 350px;
+    margin-top: 250px; /* Отступ сверху для смещения блоков вниз */
+    /*margin-left: 60px; !* Отступ слева для первого блока *!*/
+    position: absolute;
+}
+.description_intr {
+    right: 440px; /* Сдвиг от правого края */
+    margin-right: 20px; /* Дополнительный отступ справа для первого блока */
+}
+.style_advice_intr {
+    right: 70px; /* Больший сдвиг от правого края для второго блока */
+}
+.clothing_intr {
+    background-color: #110108;
+    border-radius: 40px;
+    width: 740px;
+    margin-top: 530px; /* Измените отступ сверху для clothing */
+    margin-right: 70px;
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+
+.description_ap,
+.style_advice_ap {
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    height: 250px;
+    width: 350px;
+    margin-top: 270px; /* Отступ сверху для смещения блоков вниз */
+    margin-left: 70px; /* Отступ слева для первого блока */
+}
+.style_advice_ap {
+    margin-left: 40px; /* Дополнительный отступ слева для второго блока */
+}
+.clothing_ap {
+    background-color: #FFD32A;
+    border-radius: 40px;
+    width: 740px;
+    margin-top: 560px; /* Измените отступ сверху для clothing */
+    margin-left: -740px; /* Измените отступ слева для clothing */
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+
+.description_rec,
+.style_advice_rec {
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    height: 250px;
+    width: 350px;
+    margin-top: 250px; /* Отступ сверху для смещения блоков вниз */
+    /*margin-left: 60px; !* Отступ слева для первого блока *!*/
+    position: absolute;
+}
+.description_rec {
+    right: 440px; /* Сдвиг от правого края */
+    margin-right: 20px; /* Дополнительный отступ справа для первого блока */
+}
+.style_advice_rec {
+    right: 70px; /* Больший сдвиг от правого края для второго блока */
+}
+.clothing_rec{
+    background-color: #FFF0DB;
+    border-radius: 40px;
+    width: 740px;
+    margin-top: 530px; /* Измените отступ сверху для clothing */
+    margin-right: 70px;
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+
+.description_hg,
+.style_advice_hg {
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    height: 250px;
+    width: 350px;
+    margin-top: 270px; /* Отступ сверху для смещения блоков вниз */
+    margin-left: 70px; /* Отступ слева для первого блока */
+}
+.style_advice_hg {
+    margin-left: 40px; /* Дополнительный отступ слева для второго блока */
+}
+.clothing_hg {
+    background-color: #613EDD;
+    border-radius: 40px;
+    width: 740px;
+    margin-top: 560px; /* Измените отступ сверху для clothing */
+    margin-left: -740px; /* Измените отступ слева для clothing */
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+
+
+
+.top_white, .bottom_white {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.top_black, .bottom_black {
+    color:black;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.ul_black {
+    font-size: 19px;
+    list-style: none;
+    margin: 0;
+    padding-left: 20px;
+
+}
+
+.ul_white {
+    font-size: 19px;
+    list-style: none;
+    color: white;
+    margin: 0;
+    padding-left: 20px;
+
+}
+.top, .bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
