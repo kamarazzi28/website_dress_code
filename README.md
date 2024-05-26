@@ -6,7 +6,6 @@ This project is a full-stack web application that recommends clothing based on t
 ### Technologies Used
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP
-- **Database:** PostgreSQL
 
 ### Features
 - User registration and login system
